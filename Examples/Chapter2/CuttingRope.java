@@ -1,6 +1,7 @@
 public class CuttingRope {
     /**
      * 面试题14：剪绳子
+     * 动态规划
      */
     static int maxProduct(int length) {
         if(length < 2) {

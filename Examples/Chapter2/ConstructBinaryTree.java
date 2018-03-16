@@ -1,4 +1,6 @@
-
+/**
+ * 面试题7：重建二叉树
+ */
 
 public class ConstructBinaryTree {
     static TreeNode construct(int[] preOrder, int[] inOrder) {
@@ -15,13 +17,16 @@ public class ConstructBinaryTree {
         TreeNode root = new TreeNode(preOrder[preStart]);
         for(int i = 0; i < inOrder.length; i++) {
             if(preOrder[0] == inOrder[i]) {
-                root.left = constructCore(preOrder, preStart + 1 - inStart, preEnd, inOrder, inStart, i - 1);
+                root.left = constructCore(preOrder, preStart + 1, preStart + i - inStart, inOrder, inStart, i - 1);
                 root.right = constructCore(preOrder, i - inStart + preStart + 1, preEnd, inOrder, i + 1, inEnd);
             }
         }
         return root;
     }
 
+    /**
+     * 测试用例
+     */
     public static void main(String[] args) {
         int[] preOrder = {1,2,4,7,3,5,6,8};
         int[] inOrder = {4,7,2,1,5,3,8,6};
@@ -31,6 +36,9 @@ public class ConstructBinaryTree {
 
     }
 
+    /**
+     * 测试用例方法
+     */
     static void traverse(TreeNode root) {
         if(root == null) {
             return ;
