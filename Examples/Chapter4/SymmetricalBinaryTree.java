@@ -1,5 +1,8 @@
 //question 28
 public class SymmetricalBinaryTree {
+    /**
+     * 面试题28：对称的二叉树
+     */
     public boolean isSymmetrical(BinaryTreeNode root) {
         return isSymmetrical(root, root);
     }
@@ -8,7 +11,7 @@ public class SymmetricalBinaryTree {
         if(root1 == null && root2 == null) {
             return true;
         }
-        if(root1 ==null || root2 == null) {
+        if(root1 == null || root2 == null) {
             return false;
         }
         if(root1.value != root2.value) {

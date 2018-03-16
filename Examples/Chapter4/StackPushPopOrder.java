@@ -2,6 +2,9 @@ import java.util.Stack;
 
 //question 31
 public class StackPushPopOrder {
+    /**
+     * 面试题31：栈的压入、弹出序列
+     */
     public boolean isPopOrder(int[] pushA, int[] popA) {
         if(pushA == null || popA == null || 
             pushA.length == 0|| popA.length == 0) {

@@ -2,6 +2,9 @@ import java.util.Stack;
 
 //question 30
 public class MinInStack {
+    /**
+     * 面试题30：包含min的栈
+     */
     Stack<Integer> stack = new Stack<>();
     Stack<Integer> minStack = new Stack<>();
 

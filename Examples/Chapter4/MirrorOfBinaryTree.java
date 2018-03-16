@@ -1,5 +1,8 @@
 //question 27
 public class MirrorOfBinaryTree {
+    /**
+     * 面试题27：二叉树的镜像
+     */
     public void mirrorRecursively(BinaryTreeNode node) {
         if(node == null) {
             return ;

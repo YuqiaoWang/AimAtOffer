@@ -3,6 +3,9 @@ import java.util.Queue;
 
 //question 32
 public class PrintTreeFromTopToBottom {
+    /**
+     * 面试题32：从上到下打印二叉树
+     */
     public void printTreeFromTopToBottom(BinaryTreeNode root) {
         if(root == null) {
             return ;

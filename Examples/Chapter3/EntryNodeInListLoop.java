@@ -1,5 +1,8 @@
 //quenstion 23
 public class EntryNodeInListLoop {
+    /**
+     * 面试题23：链表中环的入口节点
+     */
     public ListNode meetNode(ListNode head) {
         if(head == null) {
             return head;
@@ -25,7 +28,7 @@ public class EntryNodeInListLoop {
 
     public ListNode entryNodeofLoop(ListNode head) {
         ListNode meetingNode = meetNode(head);
-        if(meetingNode != null) {
+        if(meetingNode == null) {
             return null;
         }
         int nodesInLoop = 1;

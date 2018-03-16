@@ -1,5 +1,8 @@
 
 public class SubstructInTree {
+    /**
+     * 面试题26：树的子结构
+     */
     public boolean hasSubtree(BinaryTree root1, BinaryTree root2) {
         boolean result = false;
         if(root1 != null && root2 != null) {

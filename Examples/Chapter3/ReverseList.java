@@ -1,5 +1,8 @@
 //question 24
 public class ReverseList {
+    /**
+     * 面试题24：反转链表
+     */
     public ListNode reverseList(ListNode head) {
         ListNode reversedHead = null;
         ListNode node = head;

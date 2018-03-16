@@ -2,6 +2,9 @@ import java.util.Arrays;
 
 //question 33
 public class SquenceOfBST{
+    /**
+     * 面试题33：二叉搜索树后序遍历序列
+     */
     public boolean verifySequenceOfBST(int[] sequence) {
         if(sequence == null || sequence.length == 0) {
             return false;
