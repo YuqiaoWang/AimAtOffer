@@ -1,6 +1,7 @@
 public class Fibonacci {
     /**
      * 面试题10：斐波那契数列
+     * 时间复杂度O(n)
      */
     static int fibonacci(int n) {
         if(n == 0) {
@@ -19,7 +20,9 @@ public class Fibonacci {
         }
         return fibN;
     }
-
+    /**
+     * 测试用例
+     */
     public static void main(String[] args) {
         int n = 3;
         int result = fibonacci(n);
