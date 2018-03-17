@@ -2,6 +2,7 @@
 public class SymmetricalBinaryTree {
     /**
      * 面试题28：对称的二叉树
+     * 对称遍历，如果两次遍历相同，则为对称二叉树
      */
     public boolean isSymmetrical(BinaryTreeNode root) {
         return isSymmetrical(root, root);

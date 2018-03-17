@@ -1,4 +1,7 @@
 //question 29
+/**
+ * 面试题29：顺时针打印矩阵
+ */
 public class PrintMatrix {
     public void printMatrixClockwisely(int[][] numbers, int columns, int rows) {
         if(numbers == null || columns <= 0 || rows <= 0) {

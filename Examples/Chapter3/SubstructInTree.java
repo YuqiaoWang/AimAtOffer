@@ -3,6 +3,9 @@ public class SubstructInTree {
     /**
      * 面试题26：树的子结构
      */
+    /**
+     * 第一步：遍历二叉树
+     */
     public boolean hasSubtree(BinaryTree root1, BinaryTree root2) {
         boolean result = false;
         if(root1 != null && root2 != null) {

@@ -3,6 +3,9 @@ public class EntryNodeInListLoop {
     /**
      * 面试题23：链表中环的入口节点
      */
+    /**
+     * 此方法在链表中存在环的前提下找到一快一慢两个指针相遇的节点
+     */
     public ListNode meetNode(ListNode head) {
         if(head == null) {
             return head;
@@ -26,6 +29,9 @@ public class EntryNodeInListLoop {
         return null;
     }
 
+    /**
+     * 得出环中节点的数目，并找到入口
+     */
     public ListNode entryNodeofLoop(ListNode head) {
         ListNode meetingNode = meetNode(head);
         if(meetingNode == null) {
