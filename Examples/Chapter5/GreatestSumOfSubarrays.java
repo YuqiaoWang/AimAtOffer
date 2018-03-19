@@ -1,5 +1,7 @@
-//question 42
-
+/**
+ * 面试题42：连续数组的最大和
+ * 动态规划
+ */
 public class GreatestSumOfSubarrays {
     public static int findGreatestSumOfSubarrays(int[] data) throws Exception{
         if(data == null || data.length == 0) {

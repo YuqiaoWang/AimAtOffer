@@ -58,7 +58,7 @@ public class KLeastNumbers {
         for(int i =(lastIndex - 1)/2; i >= 0; i--) {
             int k = i;
             while(2 * k + 1 <= lastIndex) {
-                int biggerIndex = 2 * k + 1；
+                int biggerIndex = 2 * k + 1;
                 if(biggerIndex < lastIndex) {
                     if(data[biggerIndex] < data[biggerIndex + 1]) {
                         biggerIndex++;
@@ -94,7 +94,7 @@ public class KLeastNumbers {
         if(data == null || k < 0 || k > data.length) {
             return ;
         }
-        //根据输入数组前k个树建立最大堆
+        //根据输入数组前k个数建立最大堆
         //从k+1个数开始与根结点比较
         //大于根节点，舍去
         //小于，取代根节点，建立最大堆

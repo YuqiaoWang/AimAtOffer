@@ -2,6 +2,9 @@ import java.util.PriorityQueue;
 import java.util.Comparator;
 import java.lang.Override;
 
+/**
+ * 面试题41：数据流中的中位数
+ */
 public class StreamMedian {
     int count = 0;
     PriorityQueue<Integer> minheap = new PriorityQueue<Integer>();
@@ -14,12 +17,12 @@ public class StreamMedian {
 
     public void Insert(Integer num) {
         count++;
-        if((count & 1) == 0) {
+        if((count & 1) == 0) {  //存储序列为基数个元素时
             if(!maxheap.isEmpty() && num < maxheap.peek()) {
                 maxheap.offer(num);
                 num = maxheap.poll();
             }
-        }else {
+        }else {                 //存储序列为偶数个元素时
             if(!minheap.isEmpty() && num > minheap.peek()) {
                 minheap.offer(num);
                 num = minheap.poll();
