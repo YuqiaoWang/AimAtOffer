@@ -4,6 +4,9 @@ import java.util.Arrays;
 public class SquenceOfBST{
     /**
      * 面试题33：二叉搜索树后序遍历序列
+     * 后序遍历最后一个数是root
+     * 数组分为比root.value小的和比root.value大的
+     * 然后递归
      */
     public boolean verifySequenceOfBST(int[] sequence) {
         if(sequence == null || sequence.length == 0) {
@@ -19,7 +22,7 @@ public class SquenceOfBST{
             }
         }
 
-        int j = cut;
+        int j = cut;    //  找到两部分分割点
         for(; j < length - 1; j++) {
             if(sequence[j] < root) {
                 return false;
