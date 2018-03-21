@@ -1,4 +1,10 @@
-//question 47
+/**
+ * 面试题47：礼物的最大价值
+ * 动态规划
+ * f(i，j) = max{f(i-1, j) ， f(i, j-1)} + gift[i, j]
+ * 本例中构造的二维数组可以优化成一个一维数组
+ * 
+ */
 public class MaxValueOfGifts {
     public static int getMaxValue(int[][] values) {
         if(values == null || values.length <= 0 || values[0].length <= 0) {

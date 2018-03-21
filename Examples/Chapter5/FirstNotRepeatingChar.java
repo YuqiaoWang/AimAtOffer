@@ -1,5 +1,6 @@
 /**
  * 面试题50-题目1：第一次只出现一次的字符
+ * 哈希表
  */
 public class FirstNotRepeatingChar {
     public static char firstNotRepeatingChar(String string) {
